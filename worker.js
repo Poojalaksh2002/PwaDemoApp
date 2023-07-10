@@ -7,9 +7,6 @@ var urlsToCache = [
   "./main.46c23252.js.LICENSE.txt",
   "./main.46c23252.js.map",
   "./logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-  "./asset-manifest.json",
-  "./index.html",
-  "./manifest.json",
 ];
 
 // Install a service worker
