@@ -10,7 +10,6 @@ var urlsToCache = [
   "./asset-manifest.json",
   "./index.html",
   "./manifest.json",
-  "./worker.js",
 ];
 
 // Install a service worker
