@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PwaDemoApp/static/css/main.073c9b0a.css",
+    "main.js": "/PwaDemoApp/static/js/main.46c23252.js",
+    "static/media/logo.svg": "/PwaDemoApp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/PwaDemoApp/index.html",
+    "main.073c9b0a.css.map": "/PwaDemoApp/static/css/main.073c9b0a.css.map",
+    "main.46c23252.js.map": "/PwaDemoApp/static/js/main.46c23252.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.46c23252.js"
+  ]
+}
