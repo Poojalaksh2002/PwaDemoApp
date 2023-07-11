@@ -22,16 +22,33 @@ self.addEventListener("install", (event) => {
 // Cache and return requests
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches.match(event.request).then(function (response) {
-      // Cache hit - return response
-      if (response) {
-        console.log("fetched Success");
-        return response;
-      }
-      return fetch(event.request);
+    caches.match(event.request).then((cacheRes) => {
+      // If the file is not present in STATIC_CACHE,
+      // it will be searched in DYNAMIC_CACHE
+      return (
+        cacheRes ||
+        fetch(event.request).then((fetchRes) => {
+          return caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request.url, fetchRes.clone());
+            return fetchRes;
+          });
+        })
+      );
     })
   );
 });
+// self.addEventListener("fetch", (event) => {
+//   event.respondWith(
+//     caches.match(event.request).then(function (response) {
+//       // Cache hit - return response
+//       if (response) {
+//         console.log("fetched Success");
+//         return response;
+//       }
+//       return fetch(event.request);
+//     })
+//   );
+// });
 // Update a service worker
 self.addEventListener("activate", (event) => {
   console.log("activated");
