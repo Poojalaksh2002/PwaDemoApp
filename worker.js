@@ -25,6 +25,7 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request).then(function (response) {
       // Cache hit - return response
       if (response) {
+        console.log("fetched Success");
         return response;
       }
       return fetch(event.request);
@@ -33,6 +34,7 @@ self.addEventListener("fetch", (event) => {
 });
 // Update a service worker
 self.addEventListener("activate", (event) => {
+  console.log("activated");
   var cacheWhitelist = ["pwa-task-manager"];
   event.waitUntil(
     caches.keys().then((cacheNames) => {
