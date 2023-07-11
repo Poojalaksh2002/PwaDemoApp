@@ -2,11 +2,11 @@ var CACHE_NAME = "pwa-task-manager";
 var urlsToCache = [
   "/",
   "./main.073c9b0a.css",
-  "./main.073c9b0a.css.map",
   "./main.46c23252.js",
-  "./main.46c23252.js.LICENSE.txt",
-  "./main.46c23252.js.map",
   "./logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+  "./index.html",
+  "./main.073c9b0a.css.map",
+  "./main.46c23252.js.map",
 ];
 
 // Install a service worker
