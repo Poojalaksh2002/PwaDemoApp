@@ -1,6 +1,11 @@
 var CACHE_NAME = "pwa-task-manager";
 var urlsToCache = [
   "/PwaDemoApp/static/css/main.073c9b0a.css",
+  "/PwaDemoApp/static/css/main.073c9b0a.css.map",
+  "/PwaDemoApp/static/js/main.46c23252.js",
+  "/PwaDemoApp/static/js/main.46c23252.js.LICENSE.txt",
+  "/PwaDemoApp/static/js/main.46c23252.js.map",
+  "/PwaDemoApp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
   // "/",
   // "./main.073c9b0a.css",
   // "./main.46c23252.js",
